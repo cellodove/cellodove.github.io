@@ -33,7 +33,7 @@ last_modified_at: 2021-10-01
 
 우리는 코드를 다짠뒤 생각을한다. 우리가 만든 쓰레기 코드를보며 "아, 나중에 고쳐야겠다...", "돌아가기만 하면 되지..."
 
-![dove.gif](../assets/images/dove.gif)
+![dove.gif](../assets/images/dove.gif?raw=true)
 
 하지만 우리는 르블랑의 법칙을 알아야했다...
 
