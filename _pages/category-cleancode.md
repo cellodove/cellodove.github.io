@@ -1,6 +1,6 @@
 ---
 title: "클린코드"
-permalink: /categories/cleancode/ 
+permalink: /categories/cleanCode/ 
 layout: category
 author_profile: true
 taxonomy: 클린코드 

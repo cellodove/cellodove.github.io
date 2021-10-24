@@ -3,7 +3,7 @@ title : "챕터1 Clean Code"
 excerpt: "클린코드 정주행1"
 
 categories :
-  - cleancode
+  - cleanCode
 last_modified_at: 2021-10-01 
 ---
 
