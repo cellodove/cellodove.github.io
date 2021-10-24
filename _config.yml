@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Jusung Kim"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/ProfileImage.jpg"
   bio              : "Android Developer<br>Skylabs.INC"
   location         : "Pangyo, Seongnam"
   email            :
