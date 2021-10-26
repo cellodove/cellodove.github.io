@@ -4,6 +4,9 @@ excerpt: "클린코드 정주행2"
 
 categories :
   - CleanCode
+
+toc: true
+toc_sticky: true
 last_modified_at: 2021-10-10 
 ---
 
