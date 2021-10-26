@@ -1,3 +1,12 @@
+---
+title : "챕터2 의미 있는 이름2"
+excerpt: "클린코드 정주행3"
+
+categories :
+  - CleanCode
+last_modified_at: 2021-10-10 
+---
+
 # 챕터2 의미 있는 이름2
 
 ![writing.jpg](/assets/images/writing.jpg?raw=true)
