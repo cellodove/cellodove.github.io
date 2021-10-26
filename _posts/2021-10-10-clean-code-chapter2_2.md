@@ -4,7 +4,7 @@ excerpt: "클린코드 정주행3"
 
 categories :
   - CleanCode
-last_modified_at: 2021-10-10 
+last_modified_at: 2021-10-11 
 ---
 
 # 챕터2 의미 있는 이름2
