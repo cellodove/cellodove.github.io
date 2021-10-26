@@ -9,7 +9,7 @@ last_modified_at: 2021-10-10
 
 # 챕터2 의미 있는 이름1
 
-![thinking.jpg](/assets/images/thinking.png?raw=tru)
+![thinking.jpg](/assets/images/thinking.png?raw=true)
 
 ## 2.1 들어가면서
 
