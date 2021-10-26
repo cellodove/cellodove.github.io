@@ -7,13 +7,11 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items" id="category_tag_menu">
     
-      <li>
-            📂전체 글 수</style> {{sum}}</style>개</style> 
-      </li>
+      <li>전체 글 수</style> {{sum}}</style>개</style> </li>
       <li>
         <span class="nav__sub-title">클린코드</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
-            <ul>
+            <ul
                 {% for category in site.categories %}
                     {% if category[0] == "CleanCode" %}
                         <li><a href="/categories/CleanCode" class="">클린코드 ({{category[1].size}})</a></li>
