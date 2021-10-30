@@ -1,6 +1,6 @@
 ---
 title: "안드로이드 문제해결"
-permalink: /categories/Android/Problem
+permalink: /categories/Android/Problem/
 layout: category
 author_profile: true
 sidebar_main: true
