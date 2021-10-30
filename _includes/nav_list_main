@@ -33,7 +33,7 @@
 
             <ul
                 {% for category in site.categories %}
-                    {% if category[1] == "Android.Problem" %}
+                    {% if category[1] == "Android/Problem" %}
                         <li><a href="/categories/Android/Problem" class="">안드로이드 문제해결 ({{category[2].size}})</a></li>
                     {% endif %}
                 {% endfor %}
