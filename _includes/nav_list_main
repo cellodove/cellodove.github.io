@@ -25,8 +25,8 @@
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul
                 {% for category in site.categories %}
-                    {% if category[0] == "CleanCode" %}
-                        <li><a href="/categories/Android" class="">안드로이드 ({{category[2].size}})</a></li>
+                    {% if category[0] == "Android" %}
+                        <li><a href="/categories/Android" class="">안드로이드 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
