@@ -26,7 +26,7 @@
             <ul
                 {% for category in site.categories %}
                     {% if category[0] == "CleanCode" %}
-                        <li><a href="/categories/Android" class="">안드로이드 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Android" class="">안드로이드 ({{category[2].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
