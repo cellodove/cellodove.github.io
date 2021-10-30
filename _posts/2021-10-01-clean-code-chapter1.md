@@ -1,5 +1,5 @@
 ---
-#title : "챕터1 Clean Code"
+title : "챕터1 Clean Code"
 excerpt: "클린코드 정주행1"
 
 categories :
@@ -10,7 +10,7 @@ toc_sticky: true
 last_modified_at: 2021-10-01 
 ---
 
-# 챕터1 Clean Code
+## 챕터1 Clean Code
 
 ## 1.1 코드가 존재하리라
 
