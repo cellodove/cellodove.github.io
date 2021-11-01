@@ -20,7 +20,7 @@ last_modified_at: 2021-10-30
 
 즉 어플리케이션이 응답하지 않는다는 에러이다.
 
-이 에러의 원인은 main Thread (UI Thread)가 일정 시간 어떤 Task에 잡혀 있으면 발생하게 된다.
+**이 에러의 원인은 main Thread (UI Thread)가 일정 시간 어떤 Task에 잡혀 있으면 발생하게 된다.**
 
 어기서 어떤 Task란 시간이 오래걸리는 작업들을 의미한다. 예를들어 I/O명령과 관련된 느린 작업이나, 긴 계산을 하고있는 경우이다.
 
@@ -36,7 +36,7 @@ Main Thread에서 실행되는 임의의 method는 최소한의 일을 해야한
 
 ## Thread
 
-Thread는 무엇일까? 동시작업을 할려면 필요한 하나의 작업단위이다.
+**Thread는 무엇일까? 동시작업을 할려면 필요한 하나의 작업단위이다.**
 
 그렇다면 안드로이드에서 다른 Sub Thread가 필요한 이유는 무엇일까?
 
@@ -95,6 +95,8 @@ Handler는 의존적이다. Handler혼자서는 아무것도 못한다. MessageQ
 Looper는 하나의 스레드만을 담당할 수 있고 하나의 스레드도 오직 하나의 Looper만을 가질 수 있다.
 
 Looper는 MessageQueue가 비어있는 동안은 아무 행동도 안하고 메시지가 들어오면 해당 메시지가 들어오면 해당 메시지를 꺼내 적절한 Handler로 전달한다. 계속 반복적으로 수행하는 동작 때문에 Looper라는 이름이 붙여졌다고 한다.
+
+## 참조
 
 > [https://itmining.tistory.com/3?category=640759](https://itmining.tistory.com/3?category=640759)
 >
