@@ -10,7 +10,7 @@ toc_sticky: true
 last_modified_at: 2021-10-25 
 ---
 
-# 안드로이드 MVVM의 ViewModel과 ACC ViewModel에 대하여
+
 
 나는 Activity에 있는 Fragment전환을 ViewModel에있는 LiveData를 통해 전환을 하려했다. ViewModel 클래스는 Android Architecture Components (AAC)을 상속받아 만들었다.
 

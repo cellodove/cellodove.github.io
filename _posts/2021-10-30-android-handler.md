@@ -10,7 +10,7 @@ toc_sticky: true
 last_modified_at: 2021-10-30 
 ---
 
-# 안드로이드 Handler
+
 
 핸들러에 대해 알아보자 먼저 핸들러는 안드로이드에서 main Thread가 아닌 sub Thread를 사용하기위해 사용된다. 그럼왜 main Thread가 아닌 sub Thread를 사용해야할까?
 
