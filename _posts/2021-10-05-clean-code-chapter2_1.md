@@ -26,11 +26,11 @@ last_modified_at: 2021-10-10
 
 변수나 함수나 클래스 이름은 다음과 같은 굵직한 질문에 모두 답해야한다.
 
-변수,함수, 클래스의 존재 이유는?
+**변수,함수, 클래스의 존재 이유는?**
 
-수행 기능은?
+**수행 기능은?**
 
-사용 방법은?
+**사용 방법은?**
 
 따로 주석이 필요하다면 의도를 분명히 드러내지 못했다는 소리다.
 
@@ -151,9 +151,8 @@ getActiveAccountInfo();
 
 이 프로젝트에 참여한 프로그래머는 어느 함수를 호출할지 어떻게 알까?
 
-명확한 관례가 없다면, 변수 moneyAmount는 money와 구분이 안 된다. customerInfo는 customer와, accountData는 account와, theMessage는 message와 구분이 안 된다.
-
-"읽는 사람이 차이를 알도록 이름을 지어라."
+명확한 관례가 없다면, 변수 moneyAmount는 money와 구분이 안 된다. customerInfo는 customer와, accountData는 account와, theMessage는 message와 구분이 안 된다.  
+**"읽는 사람이 차이를 알도록 이름을 지어라."**
 
 ## 2.5 발음하기 쉬운 이름을 사용하라
 
