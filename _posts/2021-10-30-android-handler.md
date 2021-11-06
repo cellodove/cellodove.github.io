@@ -96,6 +96,7 @@ Looper는 하나의 스레드만을 담당할 수 있고 하나의 스레드도 
 
 Looper는 MessageQueue가 비어있는 동안은 아무 행동도 안하고 메시지가 들어오면 해당 메시지가 들어오면 해당 메시지를 꺼내 적절한 Handler로 전달한다. 계속 반복적으로 수행하는 동작 때문에 Looper라는 이름이 붙여졌다고 한다.
 
+
 ## 참조
 
 > [https://itmining.tistory.com/3?category=640759](https://itmining.tistory.com/3?category=640759)
