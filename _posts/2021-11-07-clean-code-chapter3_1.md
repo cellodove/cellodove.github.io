@@ -79,9 +79,8 @@ switch문은 작게 만들기 어렵다. 본질적으로 switch문은 N가지를
 
 "includeSetupAndTeardownPages, includeSetupPages, includeSuiteSetupPage"등이 좋은 예다. 문체가 비슷하면 이야기를 순차적으로 풀어가기가 쉬워진다.
 
-위에 열거한 함수를 보면 이런 질문이 떠오르리라 "includeTeardownPages, includeSuiteTeardownPage 도 있나요?" 당연하다.
-
-### "짐작하는 대로"
+위에 열거한 함수를 보면 이런 질문이 떠오르리라 "includeTeardownPages, includeSuiteTeardownPage 도 있나요?" 당연하다.  
+**"짐작하는 대로"**
 
 ## 3.6 함수 인수
 
