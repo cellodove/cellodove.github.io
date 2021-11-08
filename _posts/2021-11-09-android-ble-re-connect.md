@@ -3,7 +3,7 @@ title : "안드로이드 FragmentTransaction commit 오류"
 excerpt: "FragmentTransaction commit 오류"
 
 categories :
-  - Android
+  - AndroidProblem
 
 toc: true
 toc_sticky: true
