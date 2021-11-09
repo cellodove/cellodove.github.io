@@ -1,5 +1,5 @@
 ---
-title : "챕터2 의미 있는 이름2"
+title : "[클린 코드] 챕터2 의미 있는 이름2"
 excerpt: "클린코드 정주행3"
 
 categories :

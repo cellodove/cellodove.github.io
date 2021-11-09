@@ -1,5 +1,5 @@
 ---
-title : "챕터3 함수1"
+title : "[클린 코드] 챕터3 함수1"
 excerpt: "클린코드 정주행4"
 
 categories :

@@ -1,5 +1,5 @@
 ---
-title : "챕터1 Clean Code"
+title : "[클린 코드] 챕터1 Clean Code"
 excerpt: "클린코드 정주행1"
 
 categories :
