@@ -1,5 +1,5 @@
 ---
-title : "안드로이드 MVVM의 ViewModel과 ACC ViewModel에 대하여"
+title : "[Kotlin 안드로이드] MVVM의 ViewModel과 ACC ViewModel에 대하여"
 excerpt: "MVVM의 ViewModel과 ACC ViewModel에 대하여"
 
 categories :
