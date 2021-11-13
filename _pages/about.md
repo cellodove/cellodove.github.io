@@ -2,6 +2,7 @@
 title: "About"
 permalink: /about/
 layout: single
+author_profile: true
 ---
 
 ## 주성의 블로그
