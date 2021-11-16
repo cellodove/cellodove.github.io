@@ -9,7 +9,7 @@
     
       <li>전체 글 수</style> {{sum}}</style>개</style> </li>
       <li>
-        <span class="nav__sub-title">클린코드</span>
+        <span class="nav__sub-title">클린 시리즈</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul
                 {% for category in site.categories %}
@@ -34,7 +34,7 @@
             <ul
                 {% for category in site.categories %}
                     {% if category[0] == "AndroidProblem" %}
-                        <li><a href="/categories/AndroidProblem" class="">안드로이드 문제해결 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/AndroidProblem" class="">문제해결 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
