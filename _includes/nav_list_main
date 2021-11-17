@@ -24,6 +24,13 @@
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul
                 {% for category in site.categories %}
+                    {% if category[0] == "Components" %}
+                        <li><a href="/categories/Components" class="">컴포넌트 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul
+                {% for category in site.categories %}
                     {% if category[0] == "Android" %}
                         <li><a href="/categories/Android" class="">안드로이드 ({{category[1].size}})</a></li>
                     {% endif %}
