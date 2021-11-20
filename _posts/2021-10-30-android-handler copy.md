@@ -11,7 +11,7 @@ last_modified_at: 2021-10-30
 ---
 
 
-![Gear.jpg](../assets/images/Gear.jpg?raw=true)
+![Gear.jpg](/assets/images/Gear.jpg?raw=true)
 
 ## 컴포넌트
 
