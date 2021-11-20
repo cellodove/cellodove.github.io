@@ -1,6 +1,6 @@
 ---
-title : "[Android] Components 컴포넌트"
-excerpt: "[Android] Components 컴포넌트"
+title : "[Android] Component 컴포넌트"
+excerpt: "[Android] Component 컴포넌트"
 
 categories :
   - Components
