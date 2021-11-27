@@ -1,4 +1,14 @@
-# BLE 재연결 간헐적 오류
+---
+title : "[Kotlin 안드로이드]  BLE 재연결 간헐적 오류"
+excerpt: "[Kotlin 안드로이드]  BLE 재연결 간헐적 오류"
+
+categories :
+  - AndroidProblem
+
+toc: true
+toc_sticky: true
+last_modified_at: 2021-11-27 
+---
 
 ## 문제
 
