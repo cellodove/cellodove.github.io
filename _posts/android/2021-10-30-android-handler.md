@@ -1,5 +1,5 @@
 ---
-title : "[안드로이드] Handler"
+title : "[Android] Handler"
 excerpt: "안드로이드 Handler에 대하여"
 
 categories :
