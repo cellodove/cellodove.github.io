@@ -53,7 +53,7 @@ last_modified_at: 2021-12-08
 - Model (표출하고싶은 아이템 데이터)
 - Adapter, ViewHolder (뷰와 데이터를 연결해주기 위해 사용)
 
-### Xml
+### Xml입니다
 
 <fragment_recycler_adapter.xml>
 
