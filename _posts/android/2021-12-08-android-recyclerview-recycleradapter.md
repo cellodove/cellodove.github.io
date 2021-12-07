@@ -329,7 +329,7 @@ ViewModel이 생성되자마자 gatewayData 라이브데이터에 데이터가 �
 - 이름
 - 학번
 
-<ProfileListInfo.kt>
+- ProfileListInfo.kt
 
 ```kotlin
 data class ProfileListInfo(
