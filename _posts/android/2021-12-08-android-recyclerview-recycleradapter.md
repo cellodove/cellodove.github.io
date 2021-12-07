@@ -111,6 +111,8 @@ last_modified_at: 2021-12-08
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
+화면
+
 ![recyclerfragment.PNG](/assets/images/recyclerfragment.png?raw=true)
 
 <recycler_adapter_header.xml>
@@ -177,6 +179,8 @@ last_modified_at: 2021-12-08
         android:background="@color/black"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
+
+화면
 
 ![header.PNG](/assets/images/header.png?raw=true)
 
@@ -245,6 +249,8 @@ last_modified_at: 2021-12-08
         android:background="#0D000000"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
+
+화면
 
 ![item.PNG](/assets/images/item.png?raw=true)
 
