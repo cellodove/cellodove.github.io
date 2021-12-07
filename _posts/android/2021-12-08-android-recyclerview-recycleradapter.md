@@ -53,25 +53,201 @@ last_modified_at: 2021-12-08
 - Model (표출하고싶은 아이템 데이터)
 - Adapter, ViewHolder (뷰와 데이터를 연결해주기 위해 사용)
 
-### Xml입니다
+### Xml
 
-<fragment_recycler_adapter.xml>
+- fragment_recycler_adapter.xml
 
 다음과 같은 화면을 만든다.
 
 `<androidx.recyclerview.widget.RecyclerView>`에서 `tools:listitem=""`를 사용하면 아이템에따라 화면이 어떤식으로 표출될지 미리 알수있다.
 
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:id="@+id/settingBar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:elevation="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="start|center_vertical"
+            android:text="비둘기 대학교 학생"
+            android:textColor="#ff8200"
+            android:textSize="26sp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/profileDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:padding="5dp"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="center"
+            android:text="프로필 보기"
+            android:textSize="15sp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/settingBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/recycler_adapter_item"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+
 ![recyclerfragment.PNG](/assets/images/recyclerfragment.png?raw=true)
 
-<recycler_adapter_header.xml>
+- recycler_adapter_header.xml
 
 리사이클러뷰 최상단에 표시할 헤더를 만든다.
 
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/headerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="번호"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="학과"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="이름"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="학번"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/headerTitle"
+        android:background="@color/black"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+
 ![header.PNG](/assets/images/header.png?raw=true)
 
-<recycler_adapter_item.xml>
+- recycler_adapter_item.xml
 
 리사이클러뷰 아이템를 만든다.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:id="@+id/itemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <TextView
+            android:id="@+id/userNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:text="1"
+            android:textSize="17sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/userDepartment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:text="기계공학과"
+            android:textSize="17sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:text="고길동"
+            android:textSize="17sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/userClassNumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            tools:text="20211124"
+            android:textSize="17sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/itemContainer"
+        android:background="#0D000000"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
 
 ![item.PNG](/assets/images/item.png?raw=true)
 
@@ -81,7 +257,7 @@ xml과의 연결은 ViewBinding을 사용했다.
 
 Adapter에 넘길 데이터는 ViewModel에서 LiveData로 받는다.
 
-<RecyclerAdapterFragment.kt>
+- RecyclerAdapterFragment.kt
 
 ```kotlin
 class RecyclerAdapterFragment : Fragment() {
@@ -116,7 +292,7 @@ RecyclerView는 기본적으로 아이템을 클릭할때 클릭 리스너가 �
 
 ### ViewModel
 
-<MainViewModel.kt>
+- MainViewModel.kt
 
 ```kotlin
 class MainViewModel : ViewModel() {
@@ -168,7 +344,7 @@ data class ProfileListInfo(
 
 ### Adapter, ViewHolder
 
-<RecyclerAdapter.kt>
+- RecyclerAdapter.kt
 
 ```kotlin
 class RecyclerAdapter(private var profileListInfo : ArrayList<ProfileListInfo>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
