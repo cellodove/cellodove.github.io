@@ -61,8 +61,7 @@ last_modified_at: 2021-12-08
 
 `<androidx.recyclerview.widget.RecyclerView>`에서 `tools:listitem=""`를 사용하면 아이템에따라 화면이 어떤식으로 표출될지 미리 알수있다.
 
-```kotlin
-<?xml version="1.0" encoding="utf-8"?>
+```xml
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -118,8 +117,7 @@ last_modified_at: 2021-12-08
 
 리사이클러뷰 최상단에 표시할 헤더를 만든다.
 
-```kotlin
-<?xml version="1.0" encoding="utf-8"?>
+```xml
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -186,8 +184,7 @@ last_modified_at: 2021-12-08
 
 리사이클러뷰 아이템를 만든다.
 
-```kotlin
-<?xml version="1.0" encoding="utf-8"?>
+```xml
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
