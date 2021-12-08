@@ -1,6 +1,6 @@
 ---
-title : "[Kotlin 안드로이드]  BLE 재연결 간헐적 오류"
-excerpt: "[Kotlin 안드로이드]  BLE 재연결 간헐적 오류"
+title : "[안드로이드 Kotlin]  BLE 재연결 간헐적 오류"
+excerpt: "BLE 재연결 간헐적 오류"
 
 categories :
   - AndroidProblem
