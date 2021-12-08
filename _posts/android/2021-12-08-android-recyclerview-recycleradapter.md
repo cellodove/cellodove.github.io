@@ -1,5 +1,5 @@
 ---
-title : "[Android] RecyclerView - Recycler Adapter"
+title : "[Kotlin 안드로이드] 리사이클러 어댑터를 사용, 헤더있는 리사이클러뷰 만들기"
 excerpt: "안드로이드 RecyclerView - Recycler Adapter에 대하여"
 
 categories :
