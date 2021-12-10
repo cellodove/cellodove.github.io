@@ -316,7 +316,7 @@ class MainViewModel : ViewModel() {
 }
 ```
 
-ViewModel이 생성되자마자 gatewayData 라이브데이터에 데이터가 입력되고 옵저버 걸린 RecyclerAdapterFragment에서 리사이클러뷰가 동작한다.
+ViewModel이 생성되자마자 profileData 라이브데이터에 데이터가 입력되고 옵저버 걸린 RecyclerAdapterFragment에서 리사이클러뷰가 동작한다.
 
 ### Model
 
