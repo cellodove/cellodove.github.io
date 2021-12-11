@@ -273,13 +273,16 @@ class RecyclerAdapterFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         viewModel.profileDataInfo.observe(viewLifecycleOwner){
-            var recyclerAdapter = RecyclerAdapter(it)
+            var recyclerAdapter = RecyclerAdapter()
+            recyclerAdapter.setData(it)
+
             binding.gatewayList.adapter = recyclerAdapter
             binding.profileDetail.setOnClickListener {
                 viewModel.liveFragmentStep.value = MainViewModel.FragmentStep.PROFILE_DETAIL
             }
             recyclerAdapter.setOnItemClickListener(object : RecyclerAdapter.OnItemClickListener{
                 override fun onItemClick(position: Int) {
+                    Toast.makeText(requireContext(),"${it[position].userName} , ${it[position].userClassNumber}", Toast.LENGTH_SHORT).show()profileData.add(ProfileListInfo("1","기계공학부","홍길동","20217724"))
                 }
             })
         }
@@ -311,12 +314,19 @@ class MainViewModel : ViewModel() {
         profileData.add(ProfileListInfo("7","전자공학부","이유리","20217724"))
         profileData.add(ProfileListInfo("8","화학공학부","이세아","20217724"))
         profileData.add(ProfileListInfo("9","기계공학부","박진아","20217724"))
+
+        profileData.add(ProfileListInfo("10","국어국문학과","킹세종","20092724"))
+        profileData.add(ProfileListInfo("11","경영학과","이경영","20187712"))
+        profileData.add(ProfileListInfo("12","수학과","백수학","20157324"))
+        profileData.add(ProfileListInfo("13","독어독문학과","최다니엘","20187414"))
+        profileData.add(ProfileListInfo("14","영문학과","김힙합","20137723"))
+        profileData.add(ProfileListInfo("15","영화연극학과","비둘기","20131578"))
         profileDataInfo.value = profileData
     }
 }
 ```
 
-ViewModel이 생성되자마자 profileData 라이브데이터에 데이터가 입력되고 옵저버 걸린 RecyclerAdapterFragment에서 리사이클러뷰가 동작한다.
+ViewModel이 생성되자마자 gatewayData 라이브데이터에 데이터가 입력되고 옵저버 걸린 RecyclerAdapterFragment에서 리사이클러뷰가 동작한다.
 
 ### Model
 
@@ -347,11 +357,13 @@ data class ProfileListInfo(
 - RecyclerAdapter.kt
 
 ```kotlin
-class RecyclerAdapter(private var profileListInfo : ArrayList<ProfileListInfo>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class RecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     companion object{
         private const val TYPE_HEADER = 0
         private const val TYPE_ITEM = 1
     }
+    private var data = arrayListOf<ProfileListInfo>()
+    
     interface OnItemClickListener{
         fun onItemClick(position: Int)
     }
@@ -363,7 +375,7 @@ class RecyclerAdapter(private var profileListInfo : ArrayList<ProfileListInfo>) 
 
     inner class HeaderHolder(binding: RecyclerAdapterHeaderBinding) : RecyclerView.ViewHolder(binding.root)
     inner class ProfileListViewHolder(private val binding: RecyclerAdapterItemBinding) : RecyclerView.ViewHolder(binding.root), View.OnClickListener{
-        var onBindPosition = 0
+        private var onBindPosition = 0
 
         fun onBind(profileListInfo: ProfileListInfo, position: Int){
             binding.userNumber.text = profileListInfo.userNumber
@@ -371,13 +383,11 @@ class RecyclerAdapter(private var profileListInfo : ArrayList<ProfileListInfo>) 
             binding.userName.text = profileListInfo.userName
             binding.userClassNumber.text = profileListInfo.userClassNumber
             onBindPosition = position
-            binding.userName.setOnClickListener(this)
+            binding.root.setOnClickListener(this)
         }
 
         override fun onClick(view: View?) {
-            if (view?.id == binding.userName.id){
-                onItemClickListener.onItemClick(onBindPosition-1)
-            }
+            onItemClickListener.onItemClick(onBindPosition-1)
         }
     }
 
@@ -393,7 +403,7 @@ class RecyclerAdapter(private var profileListInfo : ArrayList<ProfileListInfo>) 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if (holder is ProfileListViewHolder){
             var gatewayListViewHolder = holder
-            gatewayListViewHolder.onBind(profileListInfo[position-1],position)
+            gatewayListViewHolder.onBind(data[position-1],position)
         }
     }
 
@@ -406,8 +416,14 @@ class RecyclerAdapter(private var profileListInfo : ArrayList<ProfileListInfo>) 
     }
 
     override fun getItemCount(): Int {
-        return profileListInfo.size + 1
+        return data.size + 1
     }
+
+    fun setData(data: List<ProfileListInfo>){
+        this.data = data as ArrayList<ProfileListInfo>
+        notifyDataSetChanged()
+    }
+
 }
 ```
 
@@ -417,9 +433,9 @@ class RecyclerAdapter(private var profileListInfo : ArrayList<ProfileListInfo>) 
 
 RecyclerView 내 위치에 대한 아이템 뷰와 메타데이터를 설명한다.
 
-위에서 설명했지만 리사이클러뷰는 아이템을 개속 생성하는것이아닌 이미 만들어진 아이템을 재활용한다. 아이템은 TextView, ImageView등의 뷰로 구성되어있을텐데 재사용되는 뷰의 구성 요소를 저장하여 바로바로 사용할수 있도록 한것이다.
+위에서 설명했지만 리사이클러뷰는 아이템을 개속 생성하는것이아닌 이미 만들어진 아이템을 재활용한다. 아이템은 TextView, ImageView등의 뷰로 구성되어있을텐데 재사용되는 뷰의 구성 요소를 저장하여 바로바로 사용할수 있도록 한것이다. 
 
-HeaderHolder
+- **HeaderHolder**
 
 헤더는 따로 데이터를 계속 바꾸는것이아닌 상단에 고정된 텍스트로 표현되기때문에 코드가 따로없다.
 
@@ -427,7 +443,7 @@ HeaderHolder
 inner class HeaderHolder(binding: RecyclerAdapterHeaderBinding) : RecyclerView.ViewHolder(binding.root)
 ```
 
-ProfileListViewHolder
+- **ProfileListViewHolder**
 
 ```kotlin
 inner class ProfileListViewHolder(private val binding: RecyclerAdapterItemBinding) : RecyclerView.ViewHolder(binding.root), View.OnClickListener{
@@ -439,13 +455,11 @@ inner class ProfileListViewHolder(private val binding: RecyclerAdapterItemBindin
             binding.userName.text = profileListInfo.userName
             binding.userClassNumber.text = profileListInfo.userClassNumber
             onBindPosition = position
-            binding.userName.setOnClickListener(this)
+            binding.root.setOnClickListener(this)
         }
 
         override fun onClick(view: View?) {
-            if (view?.id == binding.userName.id){
-                onItemClickListener.onItemClick(onBindPosition-1)
-            }
+            onItemClickListener.onItemClick(onBindPosition-1)
         }
     }
 ```
@@ -457,13 +471,11 @@ inner class ProfileListViewHolder(private val binding: RecyclerAdapterItemBindin
 ```kotlin
 //RecyclerAdapter.kt
 override fun onClick(view: View?) {
-            if (view?.id == binding.userName.id){
-                onItemClickListener.onItemClick(onBindPosition-1)
-            }
-        }
+    onItemClickListener.onItemClick(onBindPosition-1)
+}
 ```
 
-`onClick` 를 가져올수있다. 이 메소드를 사용해 클릭된 아이템의 포지션을 가지고와
+`onClick` 를 가져올수있다. 이 메소드를 사용해 클릭된 아이템의 포지션을 가지고와 
 
 ```kotlin
 //RecyclerAdapter.kt
@@ -484,6 +496,7 @@ fun setOnItemClickListener(listener : OnItemClickListener){
 recyclerAdapter.setOnItemClickListener(object : RecyclerAdapter.OnItemClickListener{
     override fun onItemClick(position: Int) {
         //필요코드 입력
+        Toast.makeText(requireContext(),"${it[position].userName} , ${it[position].userClassNumber}", Toast.LENGTH_SHORT).show()
     }
 })
 ```
@@ -538,9 +551,18 @@ override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
 
 아래에서 새롭게 올라오는 데이터가 리스트의 20번째 데이터라면 position으로 20이 들어오는 것이다.
 
-`onCreateViewHolder`는 `ViewHolder`를 만들기 위해 13 ~ 15번 정도밖에 호출되지 않지만, `onBindViewHolder`는 스크롤을 해서 데이터 바인딩이 새롭게 필요할 때 마다 호출된다. 스크롤을 무한정 돌린다면, `onBindViewHolder`도 무한정 호출된다. 무한정 호출된다 하더라도 우리는 딱 13 ~ 15개의 뷰 객체만 사용하는 꼴이다.
+`onCreateViewHolder`는 `ViewHolder`를 만들기 위해 13~15번 정도밖에 호출되지 않지만, `onBindViewHolder`는 스크롤을 해서 데이터 바인딩이 새롭게 필요할 때 마다 호출된다. 스크롤을 무한정 돌린다면, `onBindViewHolder`도 무한정 호출된다. 무한정 호출된다 하더라도 우리는 딱 13~15개의 뷰 객체만 사용하는 꼴이다.
 
 여기서는 헤더를 사용하여 포지션이 +1 된 상태이기때문에 정상적인 데이터의 포지션을 가져올려면 -1를 해주어야한다.
+
+```kotlin
+fun setData(data: List<ProfileListInfo>){
+    this.data = data as ArrayList<ProfileListInfo>
+    notifyDataSetChanged()
+}
+```
+
+이제 이 메소드를 호출하여 데이터를 넣어주면`recyclerAdapter.setData(it)` 리사이클러뷰는 동작하게 된다.
 
 실행을 시키면 다음과같은 화면이 나온다.
 
