@@ -433,7 +433,7 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
 RecyclerView 내 위치에 대한 아이템 뷰와 메타데이터를 설명한다.
 
-위에서 설명했지만 리사이클러뷰는 아이템을 개속 생성하는것이아닌 이미 만들어진 아이템을 재활용한다. 아이템은 TextView, ImageView등의 뷰로 구성되어있을텐데 재사용되는 뷰의 구성 요소를 저장하여 바로바로 사용할수 있도록 한것이다. 
+위에서 설명했지만 리사이클러뷰는 아이템을 개속 생성하는것이아닌 이미 만들어진 아이템을 재활용한다. 아이템은 TextView, ImageView등의 뷰로 구성되어있을텐데 재사용되는 뷰의 구성 요소를 저장하여 바로바로 사용할수 있도록 한것이다.
 
 - **HeaderHolder**
 
@@ -475,7 +475,7 @@ override fun onClick(view: View?) {
 }
 ```
 
-`onClick` 를 가져올수있다. 이 메소드를 사용해 클릭된 아이템의 포지션을 가지고와 
+`onClick` 를 가져올수있다. 이 메소드를 사용해 클릭된 아이템의 포지션을 가지고와
 
 ```kotlin
 //RecyclerAdapter.kt
