@@ -27,7 +27,7 @@ RecyclerAdapter에서 데이터를 업데이트 하려면 `notify~()` 종류의 
 
 그래서 한번에 받은 Item들이 많아지게 된다면 통채로 업데이트할 때 딜레이가 발생할 수 밖에 없다.
 
-그래서 RecyclerAdapter를 사용할때 화면이 깜박이는 현상이 발생하는 경우가 있었다.
+RecyclerAdapter를 사용할때 화면이 깜박이는 현상이 발생하는 경우가 있었다.
 
 ![recycleradapterFlickering.gif](/assets/images/recycleradapterFlickering.gif?raw=true)
 
