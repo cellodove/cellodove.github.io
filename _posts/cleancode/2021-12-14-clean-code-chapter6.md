@@ -1,4 +1,15 @@
-# 챕터6 객체와 자료 구조
+---
+title : "[클린 코드] 챕터6 객체와 자료 구조"
+excerpt: "클린코드 정주행9"
+
+categories :
+  - CleanCode
+
+toc: true
+toc_sticky: true
+last_modified_at: 2021-12-14
+---
+
 
 ![Bridge.jpg](/assets/images/Bridge.jpg?raw=true)
 
