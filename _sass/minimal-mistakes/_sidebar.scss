@@ -15,6 +15,9 @@
   //   -webkit-transform: translate3d(0, 0, 0);
   //   transform: translate3d(0, 0, 0);
   // }
+  .visit{
+    max-width: 60%;
+  }
 
   @include breakpoint($large) {
     float: left;
