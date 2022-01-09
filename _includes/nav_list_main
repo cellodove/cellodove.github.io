@@ -32,7 +32,7 @@
 
             <ul
                 {% for category in site.categories %}
-                    {% if category[0] == "Components" %}
+                    {% if category[0] == "Elements" %}
                         <li><a href="/categories/Elements" class="">엘리먼트 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
