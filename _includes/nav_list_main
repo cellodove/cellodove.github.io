@@ -68,7 +68,10 @@
             {% endfor %}
 
         </ul>
+      </li>
 
+      <li>
+        <span class="nav__sub-title">CS</span>
 
       </li>
 
