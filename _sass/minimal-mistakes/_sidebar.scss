@@ -16,7 +16,7 @@
   //   transform: translate3d(0, 0, 0);
   // }
   .visit{
-    max-width: 60%;
+    max-width: 50%;
   }
 
   @include breakpoint($large) {
@@ -39,7 +39,7 @@
       max-height: calc(100vh - #{$nav-height} - 2em);
     }
     .visit{
-      max-width: 50%;
+      max-width: 60%;
     }
   }
 
