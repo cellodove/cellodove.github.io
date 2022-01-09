@@ -1,6 +1,6 @@
 ---
 title: "안드로이드 컴포넌트"
-permalink: /categories/Components/ 
+permalink: /categories/Elements/ 
 layout: category
 author_profile: true
 sidebar_main: true

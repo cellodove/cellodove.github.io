@@ -3,7 +3,7 @@ title : "[Android] Context 컨텍스트"
 excerpt: "[Android] Context 컨텍스트"
 
 categories :
-  - Components
+  - Elements
 
 toc: true
 toc_sticky: true

@@ -3,7 +3,7 @@ title : "[Android] Component 컴포넌트"
 excerpt: "[Android] Component 컴포넌트"
 
 categories :
-  - Components
+  - Elements
 
 toc: true
 toc_sticky: true
