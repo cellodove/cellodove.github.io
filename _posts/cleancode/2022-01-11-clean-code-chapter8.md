@@ -1,4 +1,14 @@
-# 챕터8 경계
+---
+title : "[클린 코드] 챕터8 경계"
+excerpt: "클린코드 정주행11"
+
+categories :
+  - CleanCode
+
+toc: true
+toc_sticky: true
+last_modified_at: 2022-01-11
+---
 
 ![Boundary.jpg](/assets/images/Boundary.jpg?raw=true)
 
