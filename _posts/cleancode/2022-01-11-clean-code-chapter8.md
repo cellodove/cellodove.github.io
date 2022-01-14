@@ -10,7 +10,6 @@ toc_sticky: true
 last_modified_at: 2022-01-11
 ---
 
-
 ![Boundary.jpg](/assets/images/Boundary.jpg?raw=true)
 
 시스템에 들어가는 모든 소프트웨어를 직접 개발하는 경우는 드물다.
