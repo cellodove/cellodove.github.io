@@ -10,6 +10,7 @@ toc_sticky: true
 last_modified_at: 2022-01-19
 ---
 
+
 ![verification.jpg](/assets/images/verification.jpg?raw=true)
 
 옛날에는 단위 테스트란 자기 프로그램이 ‘돌아간다’는 사실만 확인하는 일회성 코드에 불과했다.
