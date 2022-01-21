@@ -10,6 +10,7 @@ toc_sticky: true
 last_modified_at: 2022-01-20
 ---
 
+
 ![class.jpg](/assets/images/class.jpg?raw=true)
 
 코드의 표현력과 그 코드로 이루어진 함수에 아무리 신경 쓸지라도 좀 더 차원 높은 단계까지 신경 쓰지 않으면 깨끗한 코드를 얻기 어렵다.
