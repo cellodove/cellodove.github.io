@@ -12,7 +12,6 @@ last_modified_at: 2022-01-23
 
 ![galaxy.jpg](/assets/images/galaxy.jpg?raw=true)
 
-
 <aside>
 💡 창발이란?
 </aside>
