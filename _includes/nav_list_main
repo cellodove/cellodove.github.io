@@ -52,7 +52,7 @@
             <ul
                 {% for category in site.categories %}
                     {% if category[0] == "Kotlin" %}
-                    <li><a href="/categories/Kotlin" class="">코틀린 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Kotlin" class="">코틀린 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
