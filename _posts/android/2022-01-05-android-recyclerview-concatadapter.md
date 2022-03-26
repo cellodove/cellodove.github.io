@@ -1,6 +1,6 @@
 ---
-title : "[안드로이드 Kotlin] 컨캣 어댑터를 사용, 리사이클러뷰 만들기"
-excerpt: "안드로이드 RecyclerView - Concat Adapter에 대하여"
+title : "[Android] 컨캣 어댑터를 사용, 리사이클러뷰 만들기"
+excerpt: "Android RecyclerView - Concat Adapter에 대하여"
 
 categories :
   - Android

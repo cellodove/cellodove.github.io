@@ -1,5 +1,5 @@
 ---
-title : "[안드로이드 Kotlin] 리스트 어댑터를 사용, 리사이클러뷰 만들기"
+title : "[Android] 리스트 어댑터를 사용, 리사이클러뷰 만들기"
 excerpt: "안드로이드 RecyclerView - List Adapter에 대하여"
 
 categories :
