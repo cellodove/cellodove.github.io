@@ -1,4 +1,14 @@
-# [Android] Apollo를 이용해 Graph QL API 통신1
+---
+title : "[Android] Apollo를 이용해 Graph QL API 통신1"
+excerpt: "[Android] Apollo를 이용해 Graph QL API 통신1"
+
+categories :
+  - Android
+
+toc: true
+toc_sticky: true
+last_modified_at: 2022-04-03
+---
 
 ![catch_ball2.jpg](/assets/images/catch_ball2.jpg?raw=true)
 
