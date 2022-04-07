@@ -13,6 +13,9 @@ last_modified_at: 2022-04-05
 
 ![rocket.jpg](/assets/images/rocket.jpg?raw=true)
 
+**이전글 보기**
+[[Android] Apollo를 이용해 Graph QL API 통신1](https://cellodove.github.io/android/android-use-apollo01/)
+
 계속해서 예제를 진행하겠다.
 
 이번에는 더 많은 데이터를 가지고오고 페이징처리를 추가하겠다. 쿼리를 수정하거나 변수를 추가하는것을 중점적으로 보자
@@ -857,6 +860,9 @@ class LoginFragment : Fragment() {
 전체 코드는 아래 링크에서 볼 수 있다.
 
 [https://github.com/cellodove/Apollo_Example2](https://github.com/cellodove/Apollo_Example2)
+
+**다음글 보기**
+[[Android] Apollo를 이용해 Graph QL API 통신3](https://cellodove.github.io/android/android-use-apollo03/)
 
 ## 참조
 

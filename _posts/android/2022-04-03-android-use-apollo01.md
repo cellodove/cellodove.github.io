@@ -462,6 +462,9 @@ class MainActivity : AppCompatActivity() {
 
 [https://github.com/cellodove/Apollo_Example1](https://github.com/cellodove/Apollo_Example1)
 
+**다음글 보기**
+[[Android] Apollo를 이용해 Graph QL API 통신2](https://cellodove.github.io/android/android-use-apollo02/)
+
 ## 참조
 
 > [https://www.apollographql.com/docs/](https://www.apollographql.com/docs/)
