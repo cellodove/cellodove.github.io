@@ -12,7 +12,7 @@ last_modified_at: 2022-04-07
 
 ![astronaut.jpg](/assets/images/astronaut.jpg?raw=true)
 
-**이전글 보기**
+**이전글 보기**  
 [[Android] Apollo를 이용해 Graph QL API 통신2](https://cellodove.github.io/android/android-use-apollo02/)
 
 마지막 예제를 진행하겠다.
