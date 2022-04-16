@@ -137,7 +137,7 @@ class LogApplication : Application() {}
 
 이제 앱에서 Hilt를 사용할 준비가 되었다.
 
-**MainActivity**
+**MainActivity**  
 
 - MainActivity
 
