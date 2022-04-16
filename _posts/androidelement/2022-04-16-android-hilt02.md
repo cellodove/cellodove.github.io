@@ -79,7 +79,7 @@ UI를 추가하면서 DI도 같이 하겠다.
 
 먼저 어플레케이션 객체에 DI를 연결한다.
 
-### LogApplication
+**LogApplication**  
 
 - LogApplication
 
@@ -137,7 +137,7 @@ class LogApplication : Application() {}
 
 이제 앱에서 Hilt를 사용할 준비가 되었다.
 
-### MainActivity
+**MainActivity**
 
 - MainActivity
 
