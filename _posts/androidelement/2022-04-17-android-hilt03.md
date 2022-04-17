@@ -12,7 +12,7 @@ last_modified_at: 2022-04-17
 
 ![blocks.jpg](/assets/images/blocks.jpg?raw=true)
 
-### Navigator
+## Navigator
 
 힐트 설명이 길었다. 이제 화면 전환을 위해 네비게이터를 만들어 준다.
 
