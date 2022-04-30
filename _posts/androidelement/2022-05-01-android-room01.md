@@ -10,6 +10,7 @@ toc_sticky: true
 last_modified_at: 2022-05-01
 ---
 
+
 ![room_image1.jpg](/assets/images/room_image1.jpg?raw=true)
 
 ## Room이란?
