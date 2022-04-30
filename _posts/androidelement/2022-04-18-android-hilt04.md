@@ -12,7 +12,7 @@ last_modified_at: 2022-04-18
 
 ![checklist.jpg](/assets/images/checklist.jpg?raw=true)
 
-앱이이제 Hilt로 완전히 마이그레이션됐다. 그렇다면이제 hilt를 사용했을때의 장점이였던 테스트 용이성을 확인해보자. 
+앱이이제 Hilt로 완전히 마이그레이션됐다. 그렇다면이제 hilt를 사용했을때의 장점이였던 테스트 용이성을 확인해보자.
 
 예제에있는 UI테스트를 해보겠다.
 
