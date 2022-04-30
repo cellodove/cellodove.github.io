@@ -1,4 +1,5 @@
 ---
+published: true
 title : "[Android] Room을 사용하여 로컬 데이터베이스에 데이터 저장1"
 excerpt: "Room 라이브러리 설명"
 
