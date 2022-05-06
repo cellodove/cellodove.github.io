@@ -63,7 +63,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Cs" %}
-                    <li><a href="/categories/Cs" class="">컴퓨터 사이언스 ({{category[1].size}})</a></li>
+                    <li><a href="/categories/Cs" class="">CS ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
