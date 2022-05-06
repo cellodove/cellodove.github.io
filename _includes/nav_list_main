@@ -59,17 +59,6 @@
       </li>
 
       <li>
-        <span class="nav__sub-title">알고리즘</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Algorithm" %}
-                    <li><a href="/categories/Algorithm" class="">알고리즘 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-      </li>
-
-      <li>
         <span class="nav__sub-title">CS</span>
             <ul>
                 {% for category in site.categories %}
@@ -80,8 +69,16 @@
             </ul>
       </li>
 
-
-
-
+      <li>
+        <span class="nav__sub-title">알고리즘</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Algorithm" %}
+                    <li><a href="/categories/Algorithm" class="">알고리즘 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+      
   </ul>
 </nav>
