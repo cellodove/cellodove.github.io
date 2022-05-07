@@ -1,5 +1,5 @@
 ---
-title : "[안드로이드 Kotlin]  BLE가 계속 연결되어있는 문제"
+title : "[안드로이드 Kotlin] BLE가 계속 연결되어있는 문제"
 excerpt: "BLE가 계속 연결되어있는 문제"
 
 categories :
