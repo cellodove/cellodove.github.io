@@ -17,6 +17,14 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+
+            <ul
+            {% for category in site.categories %}
+                {% if category[0] == "CleanArchitecture" %}
+                    <li><a href="/categories/CleanArchitecture" class="">클린 아키텍처 ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
       </li>
 
       <li>
