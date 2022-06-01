@@ -1,4 +1,14 @@
-# [Android] Glide를 사용하여 이미지 불러오기
+---
+title : "[Android] Glide를 사용하여 이미지 불러오기"
+excerpt: "[Android] Glide를 사용하여 이미지 불러오기"
+
+categories :
+  - Android
+
+toc: true
+toc_sticky: true
+last_modified_at: 2022-05-31
+---
 
 ![glide_image1.jpg](/assets/images/glide_image1.jpg?raw=true)
 
