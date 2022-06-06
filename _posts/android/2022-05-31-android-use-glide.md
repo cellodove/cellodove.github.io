@@ -132,6 +132,10 @@ class MainActivity : AppCompatActivity() {
 
 ![glide_gif1.gif](/assets/images/glide_gif1.gif?raw=true)
 
+전체 코드는 아래 링크에서 볼 수 있다.
+
+[https://github.com/cellodove/Glide_Example](https://github.com/cellodove/Glide_Example)
+
 ## 여러 메소드들
 
 위의 함수들은 뼈대가 되는 내용들이고 Glide는 여러가지 기능들이 있다.
