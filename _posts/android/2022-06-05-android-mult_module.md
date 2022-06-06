@@ -1,4 +1,14 @@
-# [Android] Multi Module로 Android project 구성하기
+---
+title : "[Android] Multi Module로 Android project 구성하기"
+excerpt: "[Android] Multi Module로 Android project 구성하기"
+
+categories :
+  - Android
+
+toc: true
+toc_sticky: true
+last_modified_at: 2022-06-05
+---
 
 ![multi_module_image1.jpg](/assets/images/multi_module_image1.jpg?raw=true)
 
