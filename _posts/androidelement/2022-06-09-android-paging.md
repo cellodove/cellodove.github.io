@@ -237,25 +237,17 @@ PagingSource를 만들기 위해서는 데이터 로드를 위한 식별자와 �
 
 식별자는 페이지 번호등을 의미한다. 페이지번호(식별자)를 서버나 내부저장소에 전달하여 데이터를 가져오는것이다.
 
-- **`load(params: LoadParams<Key>)`**
-
+- **`load(params: LoadParams<Key>)`**  
 load함수는 사용자가 스크롤 할 때마다 데이터를 비동기적으로 가져온다.
+  - LoadParams 객체는 로드 작업과 관련된 정보를 가지고 있다.
+    params.key에 현재 페이지 인덱스를 관리한다. 처음 데이터를 로드할 때에는 null이 반환된다.
+    params.loadSize는 가져올 데이터의 갯수를 관리한다.
 
-- LoadParams 객체는 로드 작업과 관련된 정보를 가지고 있다.
-
-params.key에 현재 페이지 인덱스를 관리한다. 처음 데이터를 로드할 때에는 null이 반환된다.
-
-params.loadSize는 가져올 데이터의 갯수를 관리한다.
-
-- load 함수는 LoadResult를 반환한다.
-
-LoadResult.Page : 로드에 성공한 경우, 데이터와 이전 다음 페이지 Key가 포함된다.
-
-LoadResult.Error : 오류가 발생한 경우이다.
-
-지금예제에는 검색어, 페이지번호, 가져올 데이터 갯수를정의해 서버에요청한다. 그리고 그 결과값중
-
-`items` 객체만 가져와 키와함께 LoadResult로 반환한다.
+  - load 함수는 LoadResult를 반환한다.
+    LoadResult.Page : 로드에 성공한 경우, 데이터와 이전 다음 페이지 Key가 포함된다.
+    LoadResult.Error : 오류가 발생한 경우이다.
+    지금예제에는 검색어, 페이지번호, 가져올 데이터 갯수를정의해 서버에요청한다. 그리고 그 결과값중
+    `items` 객체만 가져와 키와함께 LoadResult로 반환한다.
 
 - **getRefreshKey()**
   - 스와이프 Refresh나 데이터 업데이트 등으로 현재 목록을 대체할 새 데이터를 로드할 때 사용된다.PagingData는 Component에서 설명한 것처럼 새로고침 될 때마다 상응하는 PagingData를 생성해야한다.즉, 수정이 불가능하고 새로운 인스턴스를 만들어야한다.
