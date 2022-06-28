@@ -47,6 +47,14 @@
             </ul>
 
             <ul
+            {% for category in site.categories %}
+                {% if category[0] == "CoroutineFlow" %}
+                    <li><a href="/categories/CoroutineFlow" class="">코루틴&플로우 ({{category[1].size}})</a></li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+
+            <ul
                 {% for category in site.categories %}
                     {% if category[0] == "AndroidProblem" %}
                         <li><a href="/categories/AndroidProblem" class="">문제해결 ({{category[1].size}})</a></li>
