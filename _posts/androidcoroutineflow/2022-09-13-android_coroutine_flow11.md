@@ -1,6 +1,6 @@
 ---
 title : "[Coroutine&Flow] 11장 플로우 컨텍스트"
-excerpt: "플로우 연산"
+excerpt: "플로우 컨텍스트"
 
 categories :
   - CoroutineFlow
