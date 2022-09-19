@@ -10,7 +10,7 @@ toc_sticky: true
 last_modified_at: 2022-09-18
 ---
 
-![coroutine12_image1.jpg](/img/coroutine12_image1.jpg?raw=true)
+![coroutine12_image1.jpg](/assets/images/coroutine12_image1.jpg?raw=true)
 
 ## **버퍼가 없는 플로우**
 
