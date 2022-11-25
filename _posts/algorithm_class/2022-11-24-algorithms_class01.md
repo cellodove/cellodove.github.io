@@ -1,5 +1,5 @@
 ---
-title : "1. 자료구조와 알고리즘"
+title : "[Algorithm] 1장 자료구조와 알고리즘"
 excerpt: "자료구조와 알고리즘에 대하여"
 
 categories :
