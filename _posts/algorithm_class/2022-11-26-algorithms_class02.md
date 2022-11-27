@@ -12,7 +12,7 @@ last_modified_at: 2022-11-26
 
 ![algorithms2_image1.jpg](/assets/images/algorithms2_image1.jpg?raw=true))
 
-## 배열**(Array)**
+## 배열(Array)
 
 데이터를 나열하고, 각 데이터를 인덱스에 대응하도록 구성한 데이터 구조이다.
 
