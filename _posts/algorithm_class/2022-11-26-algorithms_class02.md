@@ -10,7 +10,7 @@ toc_sticky: true
 last_modified_at: 2022-11-26
 ---
 
-![algorithms2_image1.jpg](/assets/images/algorithms2_image1.jpg?raw=true))
+![algorithms2_image1.jpg](/assets/images/algorithms2_image1.jpg?raw=true)
 
 ## 배열(Array)
 
