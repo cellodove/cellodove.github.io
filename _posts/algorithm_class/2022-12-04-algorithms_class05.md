@@ -12,7 +12,7 @@ last_modified_at: 2022-12-04
 
 ![algorithms5_image1.jpg](/assets/images/algorithms5_image1.jpg?raw=true)
 
-## 링크드 리스트**(Linked List)**
+## 링크드 리스트(Linked List)
 
 각 노드가 데이터와 포인터를 가지고 한 줄로 연결되어 있는 방식으로 데이터를 저장하는 자료구조이다.
 
@@ -190,7 +190,7 @@ public class SingleLinkedList <T>{
 2. newNode의 next 포인터가 이전 노드의 next가 가리키는 노드를 가리키도록 한다.
 3. 이전 노드의 next 포인터가 newNode를 가리키도록 하면 된다.
 
-![algorithms5_image6.png](/img/algorithms5_image6.png?raw=true)
+![algorithms5_image6.png](/assets/images/algorithms5_image6.png?raw=true)
 
 해당 내용에대한 코드는 아래와 같다.
 
