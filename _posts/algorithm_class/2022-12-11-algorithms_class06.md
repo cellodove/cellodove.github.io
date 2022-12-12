@@ -274,7 +274,7 @@ public class MyHashChaining {
 
 먼저 검색할 키로 주소를 확인한뒤 키 값이 동일한지 확인한다. 만약 주소는 같고 키가 다르면 다음 데이터를 가져와 비교한다.
 
-## Linear Probing ****사용 해쉬
+## Linear Probing 사용 해쉬
 
 현재의 버킷 index로부터 고정폭 만큼씩 이동하여 차례대로 검색해 비어 있는 버킷에 데이터를 저장한다.
 
