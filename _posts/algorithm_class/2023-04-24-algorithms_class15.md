@@ -143,13 +143,13 @@ public class MergeSort {
 
 ## 복잡도
 
-![algorithms15_image3.png](/assets/images/algorithms15_image3.jpg?raw=true)
+![algorithms15_image3.png](/assets/images/algorithms15_image3.png?raw=true)
 
 정렬되지 않은 8개의 숫자를 병합 알고리즘을 사용해 오름차순으로 정렬한다고 가정하자.
 
 N=8인 배열을 한 개의 배열이 될 때까지 2로 나누면서(N/2) 분할한다.
 
-![algorithms15_image4.png](/assets/images/algorithms15_image4.jpg?raw=true)
+![algorithms15_image4.png](/assets/images/algorithms15_image4.png?raw=true)
 
 여기서 맨 아래에 한 개 씩 분활 된 것을 N=8로 다시 만들어 주려면 어떻게 해야할까?
 
@@ -157,25 +157,25 @@ N=8인 배열을 한 개의 배열이 될 때까지 2로 나누면서(N/2) 분�
 
 N=8이 되기 위해서 2를 몇번 곱해야할까?
 
-![algorithms15_image5.png](/assets/images/algorithms15_image5.jpg?raw=true)
+![algorithms15_image5.png](/assets/images/algorithms15_image5.png?raw=true)
 
 로그로 계산해보면 x = 3이 된다. 2를3번 곱해야 8이된다.
 
-![algorithms15_image6.png](/assets/images/algorithms15_image6.jpg?raw=true)
+![algorithms15_image6.png](/assets/images/algorithms15_image6.png?raw=true)
 
 배열 원소 갯수가 N이라면 N이 되는데 2를 logN 만큼 곱해야한다.
 
-![algorithms15_image7.png](/assets/images/algorithms15_image7.jpg?raw=true)
+![algorithms15_image7.png](/assets/images/algorithms15_image7.png?raw=true)
 
 그렇다면 병합 알고리즘의 시간복잡도가 N*logN인 이유는 무엇인가.
 
-![algorithms15_image8.png](/assets/images/algorithms15_image8.jpg?raw=true)
+![algorithms15_image8.png](/assets/images/algorithms15_image8.png?raw=true)
 
 1개씩 분활 되었던 배열을 오름차순으로 정렬해가면서 병합하는 과정이다.
 
 각 줄마다 모든 숫자 N개를 하나씩 읽어가면서 비교해서 병합한다.
 
-![algorithms15_image9.png](/assets/images/algorithms15_image9.jpg?raw=true)
+![algorithms15_image9.png](/assets/images/algorithms15_image9.png?raw=true)
 
 코드 구현 부분에서도 나와있듯이 순서대로 배열에 저장하기위해 모든 숫자를 비교한다.
 
