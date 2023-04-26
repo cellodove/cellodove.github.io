@@ -54,9 +54,9 @@ public class Split {
         System.out.println(rightArr);        
     }
 
-		public static void main(String[] args) {
+	public static void main(String[] args) {
         Integer[] array = {4, 1, 2, 5, 7}; 
-				ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(array));
+		ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(array));
 
         Split quickSort = new Split();
         System.out.println(quickSort.splitFunc(list));
