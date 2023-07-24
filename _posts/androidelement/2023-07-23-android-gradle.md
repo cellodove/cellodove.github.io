@@ -244,7 +244,7 @@ fun BaseExtension.kotlinOptions(configure: KotlinJvmOptions.() -> Unit) {
 
 **`kotlin-dsl` 플러그인이 Kotlin의 유형 안전성과 Groovy의 역동적인 세계 사이의 간극을 메워준다.**
 
-이 기능을 사용하기 위해 `kotlin-ds**l` 와** `kotlin-dsl-precompiled-script-plugins` 를 추가한다.
+이 기능을 사용하기 위해 `kotlin-dsl` 와 `kotlin-dsl-precompiled-script-plugins` 를 추가한다.
 
 - /buildSrc/build.gradle.kts
 
