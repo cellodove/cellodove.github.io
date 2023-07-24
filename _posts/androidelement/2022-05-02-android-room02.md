@@ -5,7 +5,7 @@ excerpt: "Room 라이브러리를 사용해 텍스트를 저장하는 예제"
 
 categories :
   - Elements
-  - 
+  
 toc: true
 toc_sticky: true
 last_modified_at: 2022-05-02

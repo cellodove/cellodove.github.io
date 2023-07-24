@@ -5,7 +5,7 @@ excerpt: "페이징 간단하게 살펴보자"
 
 categories :
   - Elements
-  - 
+  
 toc: true
 toc_sticky: true
 last_modified_at: 2022-06-09

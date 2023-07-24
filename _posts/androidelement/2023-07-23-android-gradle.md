@@ -5,7 +5,7 @@ excerpt: "Gradle precompiled"
 
 categories :
   - Elements
-  - 
+  
 toc: true
 toc_sticky: true
 last_modified_at: 2022-07-23

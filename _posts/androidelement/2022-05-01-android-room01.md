@@ -5,7 +5,7 @@ excerpt: "Room 라이브러리 설명"
 
 categories :
   - Elements
-  - 
+  
 toc: true
 toc_sticky: true
 last_modified_at: 2022-05-01
