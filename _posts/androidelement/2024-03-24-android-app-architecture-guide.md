@@ -378,3 +378,5 @@ data class Article(
 [UI 레이어 Android Developers](https://developer.android.com/topic/architecture/ui-layer?hl=ko)
 
 [도메인 레이어 Android Developers](https://developer.android.com/topic/architecture/domain-layer?authuser=1&hl=ko)
+
+[데이터 레이어 Android Developers](https://developer.android.com/topic/architecture/data-layer?hl=ko)
