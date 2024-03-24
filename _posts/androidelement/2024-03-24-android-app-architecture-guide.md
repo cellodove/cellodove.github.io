@@ -373,8 +373,8 @@ data class Article(
 
 ## 참조
 
-[https://developer.android.com/topic/architecture?hl=ko](https://developer.android.com/topic/architecture?hl=ko)
+[앱 아키텍처 가이드 Android Developers](https://developer.android.com/topic/architecture?hl=ko)
 
-[https://developer.android.com/topic/architecture/ui-layer?hl=ko](https://developer.android.com/topic/architecture/ui-layer?hl=ko)
+[UI 레이어 Android Developers](https://developer.android.com/topic/architecture/ui-layer?hl=ko)
 
-[https://developer.android.com/topic/architecture/domain-layer?authuser=1&hl=ko](https://developer.android.com/topic/architecture/domain-layer?authuser=1&hl=ko)
+[도메인 레이어 Android Developers](https://developer.android.com/topic/architecture/domain-layer?authuser=1&hl=ko)
