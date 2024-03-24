@@ -8,7 +8,7 @@ categories :
   
 toc: true
 toc_sticky: true
-last_modified_at: 2022-07-23
+last_modified_at: 2023-07-23
 ---
 
 ![android_gradle_precompile_image1.jpg](/assets/images/android_gradle_precompile_image1.jpg?raw=true)
