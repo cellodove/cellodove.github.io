@@ -27,7 +27,7 @@ last_modified_at: 2025-05-08
 **전역 DND 설정 변경 금지**
 
 - `setInterruptionFilter()`나 `setNotificationPolicy()`를 직접 호출해 전역 상태를 바꿀 수 없고, 대신 `AutomaticZenRule`을 등록·관리해야 한다.
-- 기존 API 호출 시 자동으로 암시적 `AutomaticZenRule`이 생성·갱신되며, 시스템은 가장 제한적인 규칙을 우선 적용하
+- 기존 API 호출 시 자동으로 암시적 `AutomaticZenRule`이 생성·갱신되며, 시스템은 가장 제한적인 규칙을 우선 적용한다.
 
 ## OpenJDK API 호환성 강화
 
@@ -53,7 +53,7 @@ last_modified_at: 2025-05-08
 ## UI / 시스템 동작 변경
 
 - **전체 화면(Edge-to-edge) 기본 적용**
-    - 타겟 API 35 앱은 자동으로 풀스크린 모드가 되며, 상태·네비게이션 바가 투명화되고 오버레이 뒤로 콘텐츠가 그려집니다.
+    - 타겟 API 35 앱은 자동으로 풀스크린 모드가 되며, 상태·네비게이션 바가 투명화되고 오버레이 뒤로 콘텐츠가 그려진다.
     - `WindowInsets`나 Compose Material 3 `Scaffold` 등으로 안전하게 인셋 처리 필요
 
 ![edge_to_edge.gif](/assets/images/edge_to_edge.gif?raw=true)
