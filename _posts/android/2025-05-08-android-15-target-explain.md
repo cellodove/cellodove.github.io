@@ -12,6 +12,10 @@ last_modified_at: 2025-05-08
 
 ![android15_logo.svg](/assets/images/android15_logo.svg?raw=true)
 
+## minSdkVersion 변경
+
+최소 타겟 SDK 버전이 23에서 24로 상향됨
+
 ## 포그라운드 서비스 변경사항
 
 - **`dataSync` 및 `mediaProcessing` 서비스에 24시간당 6시간 실행 제한**
