@@ -1,6 +1,6 @@
 ---
 title : "[Android] Android 15(API 35) 이상을 타겟팅하는 앱 주요 동작 변경사항"
-excerpt: "[Android] Android 15(API 35) 이상을 타겟팅하는 앱 주요 동작 변경사항"
+excerpt: "Android 15(API 35) 이상을 타겟팅하는 앱 주요 동작 변경사항"
 
 categories :
   - Android
