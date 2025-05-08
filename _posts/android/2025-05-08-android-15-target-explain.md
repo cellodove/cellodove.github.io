@@ -84,3 +84,5 @@ last_modified_at: 2025-05-08
 ## 참조
 
 [동작 변경사항 Android 15 이상을 타겟팅하는 앱](https://developer.android.com/about/versions/15/behavior-changes-15?hl=ko)
+
+[데이터 레이어 Android Developers](https://developer.android.com/topic/architecture/data-layer?hl=ko)
