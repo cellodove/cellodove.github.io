@@ -8,7 +8,7 @@
 @import "minimal-mistakes"; // main partials
 
 /* 노션 콜아웃(<aside markdown="1">) */
-.page__content aside {
+.page__content aside:not([class]) {
   margin: 1.5em 0;
   padding: 1em 1.25em;
   background: #f1f1ef;
@@ -16,14 +16,14 @@
   font-size: 0.95em;
 }
 
-.page__content aside > p {
+.page__content aside:not([class]) > p {
   margin: 0 0 0.6em;
 }
 
-.page__content aside > p:first-child {
+.page__content aside:not([class]) > p:first-child {
   font-weight: bold;
 }
 
-.page__content aside > p:last-child {
+.page__content aside:not([class]) > p:last-child {
   margin-bottom: 0;
 }
