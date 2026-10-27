@@ -568,7 +568,7 @@ public class ColumnList {
 
 이렇게 짜면 다른 코드가 망가질 염려도 없다. 또한 OCP 원칙 또한 준수하고 있다
 
-<aside>
+<aside markdown="1">
 💡 OCP(Open-Closed-Principle) - 
 
 확장에 개방적이고 수정에 폐쇄적이어야 한다.

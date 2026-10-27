@@ -173,7 +173,7 @@ val registered = pm.hasSigningCertificate(
 | 빠른 대응 | 허용 해시 목록에 양자 내성 키 SHA-256 추가 |
 | 근본 대응 | signingCertificateHistory(lineage) 전체로 판정 |
 
-<aside>
+<aside markdown="1">
 💡 포인트
 
 자기 서명을 검사하는 코드는 apkContentsSigners 한 개가 아니라 lineage 전체를 봐야 한다. 키 교체(v3/v3.1)와 하이브리드 서명(v3.2) 모두 "현재 서명"을 바꾼다.
